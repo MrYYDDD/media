@@ -1,6 +1,6 @@
 {
-//20220609-2159
-//更新内容：精简高质量站源10个；调整文件路径；更新全部部分代码。
+//20220610-0138
+//更新内容：调整jar文件，选择七七源。
 
 //GitHub@YuanHsing 缝合小黄瓜规则精简自用版
 
@@ -8,15 +8,15 @@
 # 03.🥒 (非官方) 小黄瓜大佬 XBiubiuLA.jar:
 # Github --> https://github.com/lite-cucumber/
 # 套Biubiu+LiteApple+七七+PushAgent规则
-//"spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA2.jar",
+"spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA2.jar",
 # 套Biubiu修正+LiteApple+Kuaikan规则 (没有PushAgent)
-"spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA3.jar",
+//"spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA3.jar",
 
 //第二部分——数据源：取自YH
 "sites":[
-{"key":"csp_Kuaikan","name":"🎈快看(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
+//{"key":"csp_Kuaikan","name":"🎈快看(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"csp_LiteApple","name":"🍎小苹果(SP)","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable": 1},
-//{"key":"csp_Kunyu77","name":"七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"csp_Kunyu77","name":"七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
 
 ## 03.🥒(非官方)小黄瓜大佬 套Biubiu+LiteApple+Kuaikan规则
 ## --> spider 改 "spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA3.jar",
