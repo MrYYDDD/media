@@ -1,6 +1,6 @@
 {
-//20220610-0138
-//更新内容：调整jar文件，选择七七源。
+//20220611-2205
+//更新内容：调整文件路径，为更新方便，文件仓库转移至gitee。
 
 //GitHub@YuanHsing 缝合小黄瓜规则精简自用版
 
@@ -8,9 +8,9 @@
 # 03.🥒 (非官方) 小黄瓜大佬 XBiubiuLA.jar:
 # Github --> https://github.com/lite-cucumber/
 # 套Biubiu+LiteApple+七七+PushAgent规则
-"spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA2.jar",
+"spider":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/XBiubiuLA2.jar",
 # 套Biubiu修正+LiteApple+Kuaikan规则 (没有PushAgent)
-//"spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA3.jar",
+//"spider":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/XBiubiuLA3.jar",
 
 //第二部分——数据源：取自YH
 "sites":[
@@ -19,15 +19,15 @@
 {"key":"csp_Kunyu77","name":"七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
 
 ## 03.🥒(非官方)小黄瓜大佬 套Biubiu+LiteApple+Kuaikan规则
-## --> spider 改 "spider":"https://yoyodadada.github.io/OneClickRun/MeowXB/XBiubiuLA3.jar",
-{"key":"csp_biubiu_厂长资源-蓝光","name":"🥒厂长资源-蓝光(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/厂长资源-蓝光.json"},
-{"key":"csp_biubiu_特狗影视","name":"🥒特狗影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/特狗影视.json"},
-{"key":"csp_biubiu_真不卡影院-不支持搜索","name":"🥒真不卡影院-不支持搜索(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/真不卡影院-不支持搜索.json"},
-{"key":"csp_biubiu_COKEMV","name":"🥒COKEMV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/COKEMV.json"},
-{"key":"csp_biubiu_555电影","name":"🥒555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/555电影.json"},
-{"key":"csp_biubiu_LIBVIO","name":"🥒LIBVIO(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/LIBVIO.json"},
-{"key":"csp_biubiu_哔嘀影视","name":"🥒哔嘀影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/哔嘀影视.json"},
-{"key":"csp_biubiu_大师兄影视","name":"🥒大师兄影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://yoyodadada.github.io/OneClickRun/MeowXB/大师兄影视.json"},
+## --> spider 改 "spider":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/XBiubiuLA3.jar",
+{"key":"csp_biubiu_厂长资源-蓝光","name":"🥒厂长资源-蓝光(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/厂长资源-蓝光.json"},
+{"key":"csp_biubiu_特狗影视","name":"🥒特狗影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/特狗影视.json"},
+{"key":"csp_biubiu_真不卡影院-不支持搜索","name":"🥒真不卡影院-不支持搜索(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/真不卡影院-不支持搜索.json"},
+{"key":"csp_biubiu_COKEMV","name":"🥒COKEMV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/COKEMV.json"},
+{"key":"csp_biubiu_555电影","name":"🥒555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/555电影.json"},
+{"key":"csp_biubiu_LIBVIO","name":"🥒LIBVIO(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/LIBVIO.json"},
+{"key":"csp_biubiu_哔嘀影视","name":"🥒哔嘀影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/哔嘀影视.json"},
+{"key":"csp_biubiu_大师兄影视","name":"🥒大师兄影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/MeowXB/大师兄影视.json"},
 
 //第二plus部分——固定数据源
 ## 结尾代码
