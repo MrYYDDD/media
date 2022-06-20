@@ -1,6 +1,6 @@
 {
-//20220620-1456
-//更新内容：直播文件似乎不能名为，改回base64编码。
+//20220620-1505
+//更新内容：直播部分备注明文内容。
 
 //GitHub@YuanHsing 缝合小黄瓜规则精简自用版
 
@@ -41,6 +41,8 @@
 //第三部分——直播：取自YH
 # 直播
 "lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naHByb3h5LmNvbS9odHRwczovL2dpdGh1Yi5jb20vWXVhbkhzaW5nL2ZyZWVkL3Jhdy9tYXN0ZXIvdHYvbGl2ZS50eHQ="]}]}],
+//base64解码后明文内容
+//"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=https://ghproxy.com/https://github.com/YuanHsing/freed/raw/master/tv/live.txt"]}]}],
 
 //第四部分——解析：取自YH
 "parses":[
