@@ -1,37 +1,40 @@
 {
-//20220620-1505
-//更新内容：直播部分备注明文内容。
+//20220625-1710
+//更新内容：更新文件路径。
 
 //GitHub@YuanHsing 缝合小黄瓜规则精简自用版
 
 //修改说明
 //将GitHub@YuanHsing 的OneClickRun仓库路径改为
-//https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/
-//https://gitee.com/realyoyodadada/OneClickRun/raw/master/XP/
+//https://gitee.com/real【防替换】yoyodadada/OneClickRun/raw/master/XB/
+//https://gitee.com/real【防替换】yoyodadada/OneClickRun/raw/master/XP/
+//或
+//https://gitee.com/real【防替换】yoyodadada/freed2/raw/master/TVBox/XB/
+//https://gitee.com/real【防替换】yoyodadada/freed2/raw/master/TVBox/XP/
 
 //第一部分——jar爬虫：取自YH  
 # 03.🥒 (非官方) 小黄瓜大佬 XBiubiuLA.jar:
 # Github --> https://github.com/lite-cucumber/
 # 套Biubiu+LiteApple+七七+PushAgent规则
-"spider":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/XBiubiuLA2.jar",
+"spider":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/XBiubiuLA2.jar",
 # 套Biubiu优化+LiteApple+Kuaikan规则 (没有PushAgent)
-//"spider":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/XBiubiuLA3.jar",
+//"spider":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/XBiubiuLA3.jar",
 
 //第二部分——数据源：取自YH
 "sites":[
 {"key":"csp_LiteApple","name":"🍎小苹果(SP)","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable": 1},
 {"key":"csp_Kunyu77","name":"七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
 
-{"key":"csp_biubiu_厂长资源-蓝光","name":"🥒厂长资源-蓝光(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/厂长资源-蓝光.json"},
-{"key":"csp_biubiu_奈落影院","name":"🥒奈落影院(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/奈落影院.json"},
-{"key":"csp_biubiu_在线之家","name":"🥒在线之家(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/在线之家.json"},
-{"key":"csp_biubiu_LIBVIO","name":"🥒LIBVIO(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/LIBVIO.json"},
-{"key":"csp_biubiu_Auete影视","name":"🥒Auete影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/Auete影视.json"},
-{"key":"csp_biubiu_COKEMV","name":"🥒COKEMV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/COKEMV.json"},
-{"key":"csp_biubiu_555电影","name":"🥒555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/555电影.json"},
-{"key":"csp_biubiu_特狗影视","name":"🥒特狗影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/特狗影视.json"},
-{"key":"csp_biubiu_真不卡影院-不支持搜索","name":"🥒真不卡影院-不支持搜索(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/真不卡影院-不支持搜索.json"},
-{"key":"csp_biubiu_哔嘀影视","name":"🥒哔嘀影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/OneClickRun/raw/master/XB/哔嘀影视.json"},
+{"key":"csp_biubiu_厂长资源-蓝光","name":"🥒厂长资源-蓝光(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/厂长资源-蓝光.json"},
+{"key":"csp_biubiu_奈落影院","name":"🥒奈落影院(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/奈落影院.json"},
+{"key":"csp_biubiu_在线之家","name":"🥒在线之家(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/在线之家.json"},
+{"key":"csp_biubiu_LIBVIO","name":"🥒LIBVIO(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/LIBVIO.json"},
+{"key":"csp_biubiu_Auete影视","name":"🥒Auete影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/Auete影视.json"},
+{"key":"csp_biubiu_COKEMV","name":"🥒COKEMV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/COKEMV.json"},
+{"key":"csp_biubiu_555电影","name":"🥒555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/555电影.json"},
+{"key":"csp_biubiu_特狗影视","name":"🥒特狗影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/特狗影视.json"},
+{"key":"csp_biubiu_真不卡影院-不支持搜索","name":"🥒真不卡影院-不支持搜索(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/真不卡影院-不支持搜索.json"},
+{"key":"csp_biubiu_哔嘀影视","name":"🥒哔嘀影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/哔嘀影视.json"},
 
 //第二plus部分——固定数据源
 ## 结尾代码
