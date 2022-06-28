@@ -1,4 +1,4 @@
-﻿//20220628-1624
+﻿//20220628-1634
 //更新内容：保留精华站源10个
 //取自GitHub@YuanHsing
 
@@ -20,6 +20,7 @@
 // http://xxx/mogai_api.php/v1.vod
 {"name":"默认主页","url":"https://www.tegouys.com/xgapp.php/v2/"},
 {"name":"特狗影视","url":"https://www.tegouys.com/xgapp.php/v2/"},
+{"name":"独播社","url":"http://35ys.cc/api.php/v1.vod"},
 {"name":"555电影","url":"https://555dy3.com/api.php/app/"},
 {"name":"天空影视","url":"https://www.tkys.tv/xgapp.php/v2/"},
 {"name":"爱西西","url":"https://myaixixi.com/xgapp.php/v1/"}
@@ -33,7 +34,7 @@
 {"name":"特狗影视","url":"http://tv.tegouys.com/api.php/iptv/vod/"},
 {"name":"思古官采(官)","url":"http://zy.sgyun.me/api.php"},
 {"name":"片库(官)","url":"https://pianku.wang/api.php"}
-]
+],
 
 "lunbo":[
 // 填写轮播平台的翻页链接&前綴 (BASE64)
