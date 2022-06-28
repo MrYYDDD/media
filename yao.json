@@ -1,5 +1,5 @@
-//20220628-1446
-//更新内容：更换baddychen的jar；精简影视规则，删除XB、XP规则。
+//20220628-1507
+//更新内容：baddychen的jar加载太慢，换回小黄瓜jar；精简站源总量至10个。
 
 //缝合规则精简自用版
 
@@ -9,31 +9,37 @@
 //https://gitee.com/real【防替换】yoyodadada/freed2/
 
 {
-//第一部分——jar爬虫：取自baddychen  
-"spider":"https://mryyddd.github.io/media/jar/0627_fix%20gitcafe.jar",
+//第一部分——jar爬虫：取自GitHub@YuanHsing
+"spider":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/XBiubiuLA3.jar",
 
 //第二部分——数据源：取自GitHub@YuanHsing
 "sites":[
+## 爬虫部分
 {"key":"csp_Kuaikan","name":"🎈快看(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
 {"key":"csp_LiteApple","name":"🍎小苹果(SP)","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable": 1},
-{"key":"csp_Kunyu77","name":"👒七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_Cokemv","name":"🐼Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_Buka","name":"🧼真不卡(SP)","type":3,"api":"csp_Buka","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_Auete","name":"🧿Auete(SP)","type":3,"api":"csp_Auete","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_DiDuan","name":"🌀低端影视(SP)","api":"csp_DiDuan","type":3,"searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_CZSPP","name":"🚬厂长(SP)","type":3,"api":"csp_CZSPP","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_Kmys","name":"🐱酷猫(SP)","type":3,"api":"csp_Kmys","searchable":1,"quickSearch":1,"filterable":1},
-{"key":"csp_AliPanSou","name":"🐱喵狸盘搜(只支持搜索)","type":3,"api":"csp_AliPanSou","searchable":1,"quickSearch":1,"filterable":0},
-{"key":"push_agent","name":"🍭推送（阿里）","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0},
-## 结尾代码
-{"key":"csp_结尾代码","name":"结尾代码（勿选）","type":3,"api":"csp_结尾代码","searchable":0,"quickSearch":0,"filterable":0}
+//key":"csp_Kunyu77","name":"七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
+
+## XBiuBiu部分
+{"key":"csp_biubiu_厂长资源-蓝光","name":"🥒厂长资源-蓝光(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/厂长资源-蓝光.json"},
+{"key":"csp_biubiu_LIBVIO","name":"🥒LIBVIO(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/LIBVIO.json"},
+{"key":"csp_biubiu_COKEMV","name":"🥒COKEMV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/COKEMV.json"},
+{"key":"csp_biubiu_555电影","name":"🥒555电影(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/555电影.json"},
+{"key":"csp_biubiu_特狗影视","name":"🥒特狗影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/特狗影视.json"},
+{"key":"csp_biubiu_真不卡影院-不支持搜索","name":"🥒真不卡影院-不支持搜索(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/真不卡影院-不支持搜索.json"},
+{"key":"csp_biubiu_哔嘀影视","name":"🥒哔嘀影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/哔嘀影视.json"},
+{"key":"csp_biubiu_大师兄影视","name":"🥒大师兄影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/MaooXB/大师兄影视.json"},
+
+## XPath部分
+
+## 推送
+{"key":"push_agent","name":"推送","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0}
 ],
 
 //第三部分——直播：取自GitHub@YuanHsing
 ## 直播
-"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naHByb3h5LmNvbS9odHRwczovL2dpdGh1Yi5jb20vWXVhbkhzaW5nL2ZyZWVkL3Jhdy9tYXN0ZXIvdHYvbGl2ZS50eHQ="]}]}],
+"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlZS5jb20vcmVhbHlveW9kYWRhZGEvZnJlZWQyL3Jhdy9tYXN0ZXIvdHYvbGl2ZS50eHQ="]}]}],
 ## base64解码后明文内容
-//"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=https://ghproxy.com/https://gitee.com/realyoyodadada/freed2/raw/master/tv/live.txt"]}]}],
+//"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=https://gitee.com/realyoyodadada/freed2/raw/master/tv/live.txt"]}]}],
 
 //第四部分——解析：取自GitHub@YuanHsing
 "parses":[
