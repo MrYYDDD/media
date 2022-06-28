@@ -1,5 +1,4 @@
-{
-//20220628-1222
+//20220628-1228
 //更新内容：更换bc的jar；增加优质影视站；更新文件路径。
 
 //GitHub@YuanHsing 缝合规则精简自用版
@@ -9,6 +8,7 @@
 替换为
 //https://gitee.com/real【防替换】yoyodadada/freed2/raw/master/
 
+{
 //第一部分——jar爬虫：取自YH  
 "spider":"https://mryyddd.github.io/media/jar/0627_fix%20gitcafe.jar",
 
