@@ -1,7 +1,7 @@
-//20220629-1452
-//更新内容：增加XB源——在线之家，现有爬虫1+XB10。
+//20220706-1639
+//更新内容：更新jar文件至XBiubiuLA4.jar。
 
-//缝合规则精简自用版
+//缝合规则精简自用版，现有规则2SP+6XB。
 
 //修改说明
 //https://github.com/Yuan【防替换】Hsing/freed/raw/master/TVBox/MaooXB/
@@ -12,19 +12,18 @@
 
 {
 //第一部分——jar爬虫：取自GitHub@YuanHsing
-"spider":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/XBiubiuLA2.jar",
+"spider":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/XBiubiuLA4.jar",
 
 //第二部分——数据源：取自GitHub@YuanHsing
 "sites":[
 ## 爬虫系列
-//{"key":"csp_xpath_独播库","name":"独播库(XPF)(播放器要改成系统播放器)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XP/duboku.json"},
+{"key":"csp_LiteApple","name":"🍎小苹果(SP)","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable": 1},
+{"key":"csp_Kunyu77","name":"👒七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
 //{"key":"csp_Kuaikan","name":"🎈快看(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
-//{"key":"csp_LiteApple","name":"🍎小苹果(SP)","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"filterable": 1},
-{"key":"csp_Kunyu77","name":"七七(SP)","type":3,"api":"csp_Kunyu77","searchable":1,"quickSearch":1,"filterable":1},
 
 ## XBiuBiu系列
 {"key":"csp_biubiu_厂长资源-蓝光","name":"🥒厂长资源-蓝光(XB)","type":3,"api":"csp_XBiubiu","searchable":0,"quickSearch":0,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/厂长资源-蓝光.json"},
-{"key":"csp_biubiu_在线之家","name":"🥒在线之家(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/在线之家.json"},
+//{"key":"csp_biubiu_在线之家","name":"🥒在线之家(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/在线之家.json"},
 //{"key":"csp_biubiu_LIBVIO","name":"🥒LIBVIO(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/LIBVIO.json"},
 //{"key":"csp_biubiu_Auete影视","name":"🥒Auete影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/Auete影视.json"},
 {"key":"csp_biubiu_COKEMV","name":"🥒COKEMV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/COKEMV.json"},
@@ -35,18 +34,19 @@
 //{"key":"csp_biubiu_奈落影院","name":"🥒奈落影院(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/奈落影院.json"},
 //{"key":"csp_biubiu_饭团影院","name":"🥒饭团影院(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/饭团影院.json"},
 //{"key":"csp_biubiu_hdmoli","name":"🥒hdmoli(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/hdmoli.json"},
-{"key":"csp_biubiu_天空资源","name":"🥒天空资源(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/天空资源.json"},
+//{"key":"csp_biubiu_天空资源","name":"🥒天空资源(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/天空资源.json"},
 //{"key":"csp_biubiu_乐猪影视","name":"🥒乐猪影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/乐猪影视.json"},
 //{"key":"csp_biubiu_GIMY影视","name":"🥒GIMY影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/GIMY影视.json"},
 //{"key":"csp_biubiu_GimyTV","name":"🥒GimyTV(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/GimyTV.json"},
 //{"key":"csp_biubiu_思古影视","name":"🥒思古影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/思古影视.json"},
 //{"key":"csp_biubiu_哔嘀影视","name":"🥒哔嘀影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/哔嘀影视.json"},
-{"key":"csp_biubiu_98播播网","name":"🥒98播播网(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/98播播网.json"},
+//{"key":"csp_biubiu_98播播网","name":"🥒98播播网(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/98播播网.json"},
 //{"key":"csp_biubiu_不开VIP","name":"🥒不开VIP(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/不开VIP.json"},
-{"key":"csp_biubiu_极品影视","name":"🥒极品影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/极品影视.json"},
+//{"key":"csp_biubiu_极品影视","name":"🥒极品影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/极品影视.json"},
 {"key":"csp_biubiu_大师兄影视","name":"🥒大师兄影视(XB)","type":3,"api":"csp_XBiubiu","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XB/大师兄影视.json"},
 
 ## XPath系列
+//{"key":"csp_xpath_独播库","name":"独播库(XPF)(播放器要改成系统播放器)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XP/duboku.json"},
 //{"key":"csp_xpath_zxzj2","name":"在线之家(XPF)","type":3,"api":"csp_XPathFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XP/zxzj2.json"},
 //{"key":"csp_xpath_auete","name":"Auete影视(XPF)","type":3,"api":"csp_XPathFilter","searchable":1,"quickSearch":0,"filterable":1,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XP/auete.json"},
 //{"key":"csp_xpath_libv","name":"Libvio(XPF)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gitee.com/realyoyodadada/freed2/raw/master/TVBox/XP/libv.json"},
