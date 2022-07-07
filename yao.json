@@ -1,5 +1,5 @@
-//20220706-1659
-//更新内容：更新jar文件至XBiubiuLA4.jar；调整XB站源，去除失效站源，增补优质站源。
+//20220707-1029
+//更新内容：修复直播源，gitee封锁直播源内容。
 
 //缝合规则精简自用版，现有规则2SP+7XB。
 
@@ -68,9 +68,9 @@
 
 //第三部分——直播：取自GitHub@YuanHsing
 ## 直播
-"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlZS5jb20vcmVhbHlveW9kYWRhZGEvZnJlZWQyL3Jhdy9tYXN0ZXIvdHYvbGl2ZS50eHQ="]}]}],
+"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=aHR0cDovL2ZyZWVkLnl1YW5oc2luZy5jZi90di9saXZlLnR4dA=="]}]}],
 ## base64解码后明文内容
-//"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=https://gitee.com/realyoyodadada/freed2/raw/master/tv/live.txt"]}]}],
+//"lives":[{"group":"redirect","channels":[{"name":"live","urls":["proxy://do=live&type=txt&ext=http://freed.yuanhsing.cf/tv/live.txt"]}]}],
 
 //第四部分——解析：取自GitHub@YuanHsing
 "parses":[
