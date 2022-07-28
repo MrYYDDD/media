@@ -1,0 +1,569 @@
+﻿//20220706-1719
+//更新内容：删除失效站源，增补优质站源。
+
+//缝合BiuBiu规则精简自用版，现有规则7XB。
+
+{"zhuyejiekou": [
+// zhuyejiekou(主页接口)支持底下5种接口格式
+// 比如猫影视里面的接口，只要后缀是以上5种的格式，都是可以直接复制过来使用的。
+// 最后一个接口结尾不加 , 号
+// http://xxx/api.php/v1.vod
+// https://xxx/xgapp.php/v1/
+// http://xxx/api.php/app/
+// https://xxx/xgapp.php/v2/
+// http://xxx/mogai_api.php/v1.vod
+{"name":"默认主页","url":"https://www.tegouys.com/xgapp.php/v2/"},
+{"name":"特狗影视","url":"https://www.tegouys.com/xgapp.php/v2/"},
+{"name":"独播社","url":"http://35ys.cc/api.php/v1.vod"},
+{"name":"555电影","url":"https://555dy3.com/api.php/app/"},
+{"name":"天空影视","url":"https://www.tkys.tv/xgapp.php/v2/"},
+//{"name":"爱西西","url":"https://myaixixi.com/xgapp.php/v1/"}
+],
+
+"caijizhan": [
+// 填采集站接口,
+// 采集站后缀填写到api.php就可以了，后面那些不用填写，一次只可以填写一个。
+{"name":"七七","url":"http://api.kunyu77.com/api.php"},  
+//{"name":"苹果采集","url":"http://107.150.5.146:39000/maccms10-main/api.php"},
+{"name":"特狗影视","url":"http://tv.tegouys.com/api.php/iptv/vod/"},
+//{"name":"卧龙资源(切)","url":"https://collect.wolongzyw.com/api.php"},
+//{"name":"红牛资源(切)","url":"https://www.hongniuzy2.com/api.php"},
+//{"name":"八戒资源(切)","url":"http://cj.bajiecaiji.com/inc/api.php"},
+//{"name":"百度资源(切)","url":"https://api.apibdzy.com/api.php"},
+//{"name":"天空资源(切)","url":"https://api.tiankongapi.com/api.php"},
+{"name":"思古影院(优)","url":"https://www.siguyy.net/api.php"},
+{"name":"酷猫影视(聚)","url":"https://www.pgcms10.com/api.php"},
+{"name":"天空TV(神马)","url":"http://tv.tkys.tv/api.php/iptv/vod/"}
+//{"name":"思古官采(官)","url":"http://zy.sgyun.me/api.php"},
+//{"name":"片库(官)","url":"https://pianku.wang/api.php"}
+],
+
+"lunbo":[
+// 填写轮播平台的翻页链接&前綴 (BASE64)
+// fanye(翻页链接) https://www.douyu.com/gapi/rkc/directory/mixList/2_208/
+// qianzhui(前綴) http://epg.112114.xyz/douyu/
+{"name": "斗鱼一起看","fanye": "aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMjA4Lw==","qianzhui": "aHR0cDovL2VwZy4xMTIxMTQueHl6L2RvdXl1Lw=="},
+{"name": "DY王者荣耀看","fanye":"aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMTgxLw==","qianzhui":"aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2RvdXl1Lw=="},
+{"name": "虎牙一起看","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTIxMzUmdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9odXlhLw==","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9odXlhLw=="},
+{"name": "B站一起看","fanye": "aHR0cHM6Ly9hcGkubGl2ZS5iaWxpYmlsaS5jb20veGxpdmUvd2ViLWludGVyZmFjZS92MS9zZWNvbmQvZ2V0TGlzdD9wbGF0Zm9ybT13ZWImcGFyZW50X2FyZWFfaWQ9MTAmYXJlYV9pZD0zMyZzb3J0X3R5cGU9b25saW5lJnBhZ2U9","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9iaWxpLw=="},
+{"name": "B站舞见","fanye": "aHR0cHM6Ly9hcGkubGl2ZS5iaWxpYmlsaS5jb20veGxpdmUvd2ViLWludGVyZmFjZS92MS9zZWNvbmQvZ2V0TGlzdD9wbGF0Zm9ybT13ZWImcGFyZW50X2FyZWFfaWQ9MSZhcmVhX2lkPTIwNyZzb3J0X3R5cGU9b25saW5lJnBhZ2U9","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9iaWxpLw=="},
+{"name": "虎牙星秀","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTE2NjMmdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9odXlhLw=="},
+{"name": "斗鱼舞蹈区","fanye": "aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMTAwOC8=","qianzhui": "aHR0cHM6Ly9tLmRvdXl1LmNvbS8="},
+{"name": "斗鱼颜值区","fanye": "aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMzExLw==","qianzhui": "aHR0cHM6Ly9tLmRvdXl1LmNvbS8="},
+{"name": "B站放松","fanye": "aHR0cHM6Ly9hcGkubGl2ZS5iaWxpYmlsaS5jb20veGxpdmUvd2ViLWludGVyZmFjZS92MS9zZWNvbmQvZ2V0TGlzdD9wbGF0Zm9ybT13ZWImcGFyZW50X2FyZWFfaWQ9NSZhcmVhX2lkPTMzOSZzb3J0X3R5cGU9b25saW5lJnBhZ2U9","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9iaWxpLw=="},
+{"name": "虎牙二次元","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTI2MzMmdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cHM6Ly9lcGcuMTEyMTE0Lnh5ei9odXlhLw=="},
+{"name": "斗鱼二次元","fanye": "aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMTc0Lw==","qianzhui": "aHR0cHM6Ly9tLmRvdXl1LmNvbS8="},
+{"name": "HY王者荣耀","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTIzMzYmdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2h1eWEv"},
+{"name": "HY怀旧游戏","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTEwMDEyNSZ0YWdBbGw9MCZjYWxsYmFjaz1nZXRMaXZlTGlzdEpzb25wQ2FsbGJhY2smcGFnZT0=","qianzhui": "aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2h1eWEv"},
+{"name": "HY美食","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTI3NTImdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2h1eWEv"},
+{"name": "DY音乐","fanye":"aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMTc1Lw==","qianzhui":"aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2RvdXl1Lw=="},{"name": "DY趣生活","fanye":"aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMTA5Ny8=","qianzhui":"aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2RvdXl1Lw=="},
+{"name": "HY体育","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTIzNTYmdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2h1eWEv"},
+{"name": "DY户外","fanye":"aHR0cHM6Ly93d3cuZG91eXUuY29tL2dhcGkvcmtjL2RpcmVjdG9yeS9taXhMaXN0LzJfMTI0Lw==","qianzhui":"aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2RvdXl1Lw=="},
+{"name": "HY户外","fanye": "aHR0cHM6Ly93d3cuaHV5YS5jb20vY2FjaGUucGhwP209TGl2ZUxpc3QmZG89Z2V0TGl2ZUxpc3RCeVBhZ2UmZ2FtZUlkPTIxNjUmdGFnQWxsPTAmY2FsbGJhY2s9Z2V0TGl2ZUxpc3RKc29ucENhbGxiYWNrJnBhZ2U9","qianzhui": "aHR0cDovLzEyNC4yMjMuMjEyLjM4OjgzL2h1eWEv"},
+{"name":"yy","fanye": "aHR0cHM6Ly93d3cueXkuY29tL21vcmUvcGFnZS5hY3Rpb24/Yml6PXNpbmcmc3ViQml6PWlkeCZwYWdlPQ==","qianzhui": "aHR0cHM6Ly93d3cueXkuY29t"}
+],
+
+// 主解析 是JSON直链的，可以添加多个，用#号分割，最后一个不加#号
+"zhujiexi": "https://json.5lp.net/json.php?url=#http://api.vip123kan.vip/?url=#https://vip.aiaine.com/api/?key=8FN8gNAySnvJiMllxZ&url=#http://svip.nicefamily.club/home/api?type=ys&uid=769560&key=chijkrtBEGNPRWXZ35&url=#http://47.100.138.210:91/home/api?type=ys&uid=7593435&key=ehortuyAHMNQTWX457&url=#https://jx.300ys.xyz/json/jianghu.php/?url=#https://jhpc.manduhu.com/j1217.php?url=#https://api.m3u8.tv:5678/home/api?type=ys&uid=1931000&key=gktuvyzABEORSYZ135&urI=#https://json.hfyrw.com/mao.go?url=#https://jsap.attakids.com/?url=#https://app.iminna.com/jx/?url=#https://humaosp.com/json.php?url=#https://jx.mczdyw.com/xg.php?url=#http://api.vip123kan.vip/?url=#https://aa.xkys.tv/json.php?url=#https://json.5lp.net/json.php?url=#https://json.hfyrw.com/mao.go?url=#https://jhpc.manduhu.com/j1217.php?url=#https://vip.aiaine.com/api/?key=8FN8gNAySnvJiMllxZ&url=#http://svip.nicefamily.club/home/api?type=ys&uid=769560&key=chijkrtBEGNPRWXZ35&url=#http://47.100.138.210:91/home/api?type=ys&uid=7593435&key=ehortuyAHMNQTWX457&url=#https://jx.300ys.xyz/json/jianghu.php/?url=#https://json.5lp.net/json.php?url=#http://api.vip123kan.vip/?url=#http://svip.nicefamily.club/home/api?type=ys&uid=769560&key=chijkrtBEGNPRWXZ35&url=#http://47.100.138.210:91/home/api?type=ys&uid=7593435&key=ehortuyAHMNQTWX457&url=#https://jx.300ys.xyz/json/jianghu.php/?url=",
+// 备用解析 是常规格式的解析，可以添加多个，用#号分割，最后一个不加#号
+"beiyongjiexi": "https://jx.parwix.com:4433/player/?url=#https://jx.parwix.com:4433/player/analysis.php?v=#http://1.117.152.239:39000/?url=#http://api.diliktv.xyz/vip/jx.php?url=#https://nbjx.vip/?url=#https://jx.blbo.cc:4433/?url=#http://api.diliktv.xyz/vip/jx.php?url=#https://nbjx.vip/?url=#https://www.nxflv.com/?url=#https://vipjx.cc/?url=https://jx.parwix.com:4433/player/?url=#https://jx.aidouer.net/?url=#https://svip.bljiex.cc/?v=#https://bd.jx.cn/vip/?url=#https://z1.m1907.cn/?jx=#https://vip.2ktvb.com/player/?url=", 
+// 电视直播的接口链接
+"dianshizhibo": "https://gitee.com/realyoyodadada/freed2/raw/master/BiuBiu/live.txt",
+// 体育直播平台的翻页链接
+"tiyuzhibo": "https://m.zhibo8.net",
+"reci": "https://v.sogou.com",
+"guolvdizhi": "player.css#url=#cnzz.com#51.la",
+"wuqu": "aHR0cDovL3d3dy5kanV1LmNvbQ==",
+// 填写轮播平台的翻页链接
+"lunbofanye": "https://www.douyu.com/gapi/rkc/directory/mixList/2_208/",
+"lunboqianzhui": "https://m.douyu.com",
+"Home": {
+// 主页接口.电影filter
+"dy": {
+"class": "全部$&class=#喜剧$&class=喜剧#爱情$&class=爱情#动作$&class=动作#枪战$&class=枪战#犯罪$&class=犯罪#惊悚$&class=惊悚#恐怖$&class=恐怖#悬疑$&class=悬疑#动画$&class=动画#家庭$&class=家庭#奇幻$&class=奇幻#魔幻$&class=魔幻#科幻$&class=科幻#战争$&class=战争#青春$&class=青春#剧情$&class=剧情#西部$&class=西部#纪录$&class=记录#音乐$&class=音乐#歌舞$&class=歌舞#运动$&class=运动#历史$&class=历史#武侠$&class=武侠#冒险$&class=冒险#传记$&class=传记",
+"area": "全部$&area=#内地$&area=内地#香港$&area=香港#美国$&area=美国#欧洲$&area=欧洲#韩国$&area=韩国#日本$&area=日本#泰国$&area=泰国#印度$&area=印度#其它$&area=其它",
+"year": "全部$&lang=&year=#2022$&lang=&year=2022#2021$&lang=&year=2021#2020$&lang=&year=2020#2019$&lang=&year=2019#2018$&lang=&year=2018#2017$&lang=&year=2017#2016-2011$&lang=&year=2016#2010-2000$&lang=&year=2010#90年代$&lang=&year=90#80年代$&lang=&year=80#更早$&lang=&year=70"
+},
+// 主页接口.电视剧filter
+"dsj": {
+"class": "全部$&class=#古装$&class=古装#言情$&class=言情#武侠$&class=武侠#偶像$&class=偶像#家庭$&class=家庭#青春$&class=青春#都市$&class=都市#喜剧$&class=喜剧#战争$&class=战争#军旅$&class=军旅#谍战$&class=谍战#悬疑$&class=悬疑#罪案$&class=罪案#穿越$&class=穿越#宫廷$&class=宫廷#历史$&class=历史#神话$&class=神话#科幻$&class=科幻#年代$&class=年代#农村$&class=农村#商战$&class=商战#剧情$&class=剧情#奇幻$&class=奇幻",
+"area": "全部$&area=#内地$&area=内地#香港$&area=香港#美国$&area=美国#英国$&area=英国#韩国$&area=韩国#日本$&area=日本#泰国$&area=泰国#台湾$&area=台湾#其它$&area=其它",
+"year": "全部$&lang=&year=#2022$&lang=&year=2022#2021$&lang=&year=2021#2020$&lang=&year=2020#2019$&lang=&year=2019#2018$&lang=&year=2018#2017$&lang=&year=2017#2016-2011$&lang=&year=2016#2010-2000$&lang=&year=2010#90年代$&lang=&year=90#80年代$&lang=&year=80#更早$&lang=&year=70"
+},
+// 主页接口.综艺filter
+"zy": {
+"class": "全部$&class=#表演$&class=表演#播报$&class=播报#访谈$&class=访谈#体验$&class=体验#养成$&class=养成#游戏$&class=游戏#亲子$&class=亲子#美食$&class=美食#情感$&class=情感#选秀$&class=选秀#益智$&class=益智#晚会$&class=晚会#音乐$&class=音乐#文化$&class=文化#喜剧$&class=喜剧#曲艺$&class=曲艺#职场$&class=职场#脱口秀$&class=脱口秀#真人秀$&class=真人秀#竞技$&class=竞技#体育$&class=体育#萌宠$&class=萌宠",
+"area": "全部$&area=#内地$&area=内地#香港$&area=香港#美国$&area=美国#韩国$&area=韩国#日本$&area=日本#台湾$&area=台湾",
+"year": "全部$&lang=&year=#2022$&lang=&year=2022#2021$&lang=&year=2021#2020$&lang=&year=2020#2019$&lang=&year=2019#2018$&lang=&year=2018#2017$&lang=&year=2017#2016-2011$&lang=&year=2016#2010-2000$&lang=&year=2010#90年代$&lang=&year=90#80年代$&lang=&year=80#更早$&lang=&year=70"
+},
+// 主页接口.动漫filter
+"dm": {
+"class": "全部$&class=#搞笑$&class=搞笑#番剧$&class=番剧#国创$&class=国创#大电影$&class=大电影#热血$&class=热血#催泪$&class=催泪#治愈$&class=治愈#励志$&class=励志#机战$&class=机战#战斗$&class=战斗#恋爱$&class=恋爱#科幻$&class=科幻#奇幻$&class=奇幻#魔幻$&class=魔幻#推理$&class=推理#校园$&class=校园#日常$&class=日常#经典$&class=经典#历史$&class=历史#美食$&class=美食#职场$&class=职场#偶像$&class=偶像#泡面$&class=泡面#冒险$&class=冒险#竞技$&class=竞技#武侠$&class=武侠#玄幻$&class=玄幻",
+"area": "全部$&area=#内地$&area=内地#日本$&area=日本#欧美$&area=欧美#其它$&area=其它",
+"year": "全部$&lang=&year=#2022$&lang=&year=2022#2021$&lang=&year=2021#2020$&lang=&year=2020#2019$&lang=&year=2019#2018$&lang=&year=2018#2017$&lang=&year=2017#2016-2011$&lang=&year=2016#2010-2000$&lang=&year=2010#90年代$&lang=&year=90#80年代$&lang=&year=80#更早$&lang=&year=70"
+}
+},
+
+// 自定义接口
+"zidingyi":[
+//厂长
+{
+  "name": "厂长资源-蓝光",
+  "url": "https://qianoo.cn",
+  "tihuan": "aliyundrive",
+  "User": "空",
+  "shouye": "1",
+  //"fenlei": "电视剧$/dsj/page/#电影$/zuixindianying/page/#番剧$/fanju/page/#动漫$/dm/page/#国产剧$/gcj/page/#美剧$/meijutt/page/#韩剧$/hanjutv/page/",
+  "fenlei": "本月热门$/benyueremen/page/#高分影视$/gaofenyingshi/page/#豆瓣电影TOP250$/dbtop250/page/#最新电影$/zuixindianying/page/#电视剧$/dsj/page/#国产剧$/gcj/page/#美剧$/meijutt/page/#韩剧$/hanjutv/page/#日剧$/movie_bt_series/rj/page/#海外剧$/movie_bt_series/hwj/page/#番剧$/fanju/page/#动漫$/dm/page/#韩国电影$/movie_bt_series/hanguodianying/page/#纪录片$/movie_bt/movie_bt_tags/jlpp/page/",
+  "houzhui": "",
+  "shifouercijiequ": "0",
+  "jiequqian": "空",
+  "jiequhou": "空",
+  "jiequshuzuqian": "<li>",
+  "jiequshuzuhou": "</li>",
+  "tupianqian": "original=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "alt=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "qianoo.cn",
+  "lianjiehou": "\"",
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "span>",
+  "fubiaotihou": "</span",
+  "sousuoqian": "/xssearch?q=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/movie/",
+  "ssmoshi": "1",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "<li>",
+  "ssjiequshuzuhou": "</span>",
+  "sstupianqian": "original=\"",
+  "sstupianhou": "\"",
+  "ssbiaotiqian": "alt=\"",
+  "ssbiaotihou": "\"",
+  "sslianjieqian": "qianoo.cn",
+  "sslianjiehou": "\"",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "class=\"paly_list",
+  "bfjiequshuzuhou": "</div>",
+  "zhuangtaiqian": "上映：<span>",
+  "zhuangtaihou": "</span>",
+  "daoyanqian": "<li>导演：",
+  "daoyanhou": "</li>",
+  "zhuyanqian": "<li>主演：",
+  "zhuyanhou": "</li>",
+  "juqingqian": "class=\"yp_context\">",
+  "juqinghou": "</div>",
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<a",
+  "bfyjiequshuzuhou": "/a>",
+  "bfbiaotiqian": ">",
+  "bfbiaotihou": "<",
+  "bflianjieqian": "qianoo.cn",
+  "bflianjiehou": "\""
+},
+//在线之家
+// 分类 ++
+{
+  "name": "在线之家",
+  "url": "https://www.zxzjtv.com",
+  "User": "空",
+  "shouye": "1",
+  //"fenlei": "电影$/list/1-#美剧$/list/2-#韩剧$/list/3-#日剧$/list/4-#泰剧$/list/5-#动漫$/list/6-",
+  "fenlei": "电影$/vodshow/1--------#美剧$/vodshow/2--------#韩剧$/vodshow/3--------#日剧$/vodshow/4--------#泰剧$/vodshow/5--------#动漫$/vodshow/6--------#动画片$/vodshow/1---动画-----#喜剧片$/vodshow/1---喜剧-----#爱情片$/vodshow/1---爱情-----#恐怖片$/vodshow/1---恐怖-----#动作片$/vodshow/1---动作-----#科幻片$/vodshow/1---科幻-----#剧情片$/vodshow/1---剧情-----#战争片$/vodshow/1---战争-----#警匪片$/vodshow/1---警匪-----#犯罪片$/vodshow/1---犯罪-----#奇幻片$/vodshow/1---奇幻-----#冒险片$/vodshow/1---冒险-----",
+  "houzhui": "---.html",
+  "shifouercijiequ": "0",
+  "jiequqian": "空",
+  "jiequhou": "空",
+  "jiequshuzuqian": "class=\"stui-vodlist__box",
+  "jiequshuzuhou": "</li>",
+  "tupianqian": "data-original=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "title=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "href=\"",
+  "lianjiehou": "\"",
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "text-right\">",
+  "fubiaotihou": "</span",
+  "sousuoqian": "/index.php/ajax/suggest?mid=1&wd=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/detail/",
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "空",
+  "ssjiequshuzuhou": "空",
+  "sstupianqian": "空",
+  "sstupianhou": "空",
+  "ssbiaotiqian": "空",
+  "ssbiaotihou": "空",
+  "sslianjieqian": "空",
+  "sslianjiehou": "空",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "class=\"stui-content__playlist clearfix",
+  "bfjiequshuzuhou": "</ul>",
+  "zhuangtaiqian": "更新：",
+  "zhuangtaihou": "</p>",
+  "daoyanqian": "导演：",
+  "daoyanhou": "</p>",
+  "zhuyanqian": "主演：",
+  "zhuyanhou": "</p>",
+  "juqingqian": "style=\"display: none;\">",
+  "juqinghou": "</span",
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<li",
+  "bfyjiequshuzuhou": "</li>",
+  "bfbiaotiqian": "\">",
+  "bfbiaotihou": "</a>",
+  "bflianjieqian": "href=\"",
+  "bflianjiehou": "\""
+},
+//LIBVIO
+// 分类 ++
+// 修复所有分类的第一个 detail内容为空
+{
+  "name": "LIBVIO",
+  //"url": "https://www.libvio.com",
+  "url": "https://www.libvio.me",
+  "tihuan": "dd520.cc",
+  "User": "空",
+  "shouye": "1",
+  //"fenlei": "电视剧$/show/2--------#电影$/show/1--------#综艺$/show/3--------#动漫$/show/4--------#动作片$/show/1---动作-----#喜剧片$/show/1---喜剧-----#爱情片$/show/1---爱情-----#科幻片$/show/1---科幻-----#奇幻片$/show/1---奇幻-----#恐怖片$/show/1---恐怖-----#剧情片$/show/1---剧情-----#战争片$/show/1---战争-----#冒险片$/show/1---冒险-----#国产剧$/show/2-中国大陆-------#台剧$/show/2-中国台湾-------#港剧$/show/2-中国香港-------#韩剧$/show/2-韩国-------#日剧$/show/2-日本-------#美剧$/show/2-美国-------#英剧$/show/2-英国-------",
+  "fenlei": "最近更新$/show/19--------#电影$/show/1--------#电视剧$/show/2--------#综艺$/show/3--------#动漫$/show/4--------#动画片$/show/1---动画-----#纪录片$/show/21--------#国产剧$/show/13--------#日韩剧$/show/15--------#欧美剧$/show/16--------#港台剧$/show/14--------#泰国剧$/show/2-泰国-------#喜剧片$/show/1---喜剧-----#爱情片$/show/1---爱情-----#恐怖片$/show/1---恐怖-----#动作片$/show/1---动作-----#科幻片$/show/1---科幻-----#剧情片$/show/1---剧情-----#战争片$/show/1---战争-----#警匪片$/show/1---警匪-----#犯罪片$/show/1---犯罪-----#奇幻片$/show/1---奇幻-----#武侠片$/show/1---武侠-----#冒险片$/show/1---冒险-----",
+  "houzhui": "---.html",
+  "shifouercijiequ": "0",
+  "jiequqian": "空",
+  "jiequhou": "空",
+  "jiequshuzuqian": "lazyload\"",
+  "jiequshuzuhou": "class=\"pic-tag",
+  "tupianqian": "data-original=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "title=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "href=\"",
+  "lianjiehou": "\"",
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "text-right\">",
+  "fubiaotihou": "</span",
+  "sousuoqian": "/index.php/ajax/suggest?mid=1&wd=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/detail/",
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "空",
+  "ssjiequshuzuhou": "空",
+  "sstupianqian": "空",
+  "sstupianhou": "空",
+  "ssbiaotiqian": "空",
+  "ssbiaotihou": "空",
+  "sslianjieqian": "空",
+  "sslianjiehou": "空",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "class=\"stui-content__playlist",
+  "bfjiequshuzuhou": "</ul>",
+  "zhuangtaiqian": "最后更新：",
+  "zhuangtaihou": "</a>",
+  "daoyanqian": "导演：",
+  "daoyanhou": "</p>",
+  "zhuyanqian": "主演：",
+  "zhuyanhou": "/",
+  "juqingqian": "style=\"display: none;\">",
+  "juqinghou": "</span>",
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<a",
+  "bfyjiequshuzuhou": "/a>",
+  "bfbiaotiqian": ">",
+  "bfbiaotihou": "<",
+  "bflianjieqian": "href=\"",
+  "bflianjiehou": "\""
+},
+//COKEMV
+{
+  "name": "COKEMV",
+  "url": "https://cokemv.me",
+  "User": "空",
+  "shouye": "1",
+  "fenlei": "电影$/vodshow/1--------#电视剧$/vodshow/2--------#综艺$/vodshow/3--------#动漫$/vodshow/4--------#动画电影$/vodshow/41--------#抖音电影$/vodshow/5--------#动作片$/vodshow/6--------#喜剧片$/vodshow/7--------#爱情片$/vodshow/8--------#科幻片$/vodshow/9--------#恐怖片$/vodshow/10--------#剧情片$/vodshow/11--------#战争片$/vodshow/12--------#国产剧$/vodshow/13--------#港台剧$/vodshow/14--------#日韩剧$/vodshow/15--------#欧美剧$/vodshow/16--------#犯罪片$/vodshow/23--------",
+  "houzhui": "---.html",
+  "shifouercijiequ": "1",
+  "jiequqian": "module-page",
+  //"jiequhou": "<div id=\"page\">",
+  "jiequhou": "class=\"fixedGroup",
+  "jiequshuzuqian": "<a",
+  "jiequshuzuhou": "no-referrer",
+  "tupianqian": "original=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "title=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "href=\"",
+  "lianjiehou": "\"",
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "note\">",
+  "fubiaotihou": "</div>",
+  "sousuoqian": "/index.php/ajax/suggest?mid=1&wd=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/voddetail/",
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "空",
+  "ssjiequshuzuhou": "空",
+  "sstupianqian": "空",
+  "sstupianhou": "空",
+  "ssbiaotiqian": "空",
+  "ssbiaotihou": "空",
+  "sslianjieqian": "空",
+  "sslianjiehou": "空",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "class=\"module-list",
+  "bfjiequshuzuhou": "</div>",
+  "zhuangtaiqian": "更新：</span>",
+  "zhuangtaihou": "</div>",
+  "daoyanqian": "导演：",
+  "daoyanhou": "</div>",
+  "zhuyanqian": "主演：",
+  "zhuyanhou": "</div>",
+  "juqingqian": "<p>",
+  "juqinghou": "</p>",
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<a",
+  "bfyjiequshuzuhou": "/a>",
+  "bfbiaotiqian": "span>",
+  "bfbiaotihou": "</span",
+  "bflianjieqian": "href=\"",
+  "bflianjiehou": "\""
+},
+//影视工厂
+// 分类 ++
+{
+  "name": "影视工厂",
+  "url": "http://www.ysgc.cc",
+  "User": "空",
+  "shouye": "1",
+  //"fenlei": "电视剧$/vodshow/2--------#电影$/vodshow/1--------#综艺$/vodshow/3--------#动漫$/vodshow/4--------#番剧$/vodshow/26--------#国产剧$/vodshow/13--------#港台剧$/vodshow/14--------#日韩剧$/vodshow/15--------#欧美剧$/vodshow/16--------#动作片$/vodshow/1---动作-----#喜剧片$/vodshow/1---喜剧-----#爱情片$/vodshow/1---爱情-----#科幻片$/vodshow/1---科幻-----#恐怖片$/vodshow/1---恐怖-----#剧情片$/vodshow/1---剧情-----#战争片$/vodshow/1---战争-----#武侠片$/vodshow/1---武侠-----",
+  "fenlei": "电影$/vodshow/1--------#电视剧$/vodshow/2--------#综艺$/vodshow/3--------#动漫$/vodshow/4--------#动画片$/vodshow/1---动画-----#纪录片$/vodshow/24--------#国产剧$/vodshow/13--------#港台剧$/vodshow/14--------#日韩剧$/vodshow/15--------#欧美剧$/vodshow/16--------#海外剧$/vodshow/20--------#番剧(B站)$/vodshow/26--------#国创(B站)$/vodshow/27--------#动作片$/vodshow/1---动作-----#喜剧片$/vodshow/1---喜剧-----#爱情片$/vodshow/1---爱情-----#科幻片$/vodshow/1---科幻-----#恐怖片$/vodshow/1---恐怖-----#悬疑片$/vodshow/1---悬疑-----#惊悚片$/vodshow/1---惊悚-----#犯罪片$/vodshow/1---犯罪-----#剧情片$/vodshow/1---剧情-----#战争片$/vodshow/1---战争-----#奇幻片$/vodshow/1---奇幻-----#武侠片$/vodshow/1---武侠-----#古装片$/vodshow/1---古装-----#冒险片$/vodshow/1---冒险-----#历史片$/vodshow/1---历史-----#歌舞片$/vodshow/1---歌舞-----#家庭片$/vodshow/1---家庭-----#网络片$/vodshow/1---网络-----",
+  "houzhui": "---.html",
+  "shifouercijiequ": "0",
+  "jiequqian": "空",
+  "jiequhou": "空",
+  "jiequshuzuqian": "class=\"myui-vodlist__box\"",
+  "jiequshuzuhou": "</a>",
+  "tupianqian": "original=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "title=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "href=\"",
+  "lianjiehou": "\"",
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "text-right\">",
+  "fubiaotihou": "</span",
+  "sousuoqian": "/index.php/ajax/suggest?mid=1&wd=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/voddetail/",
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "空",
+  "ssjiequshuzuhou": "空",
+  "sstupianqian": "空",
+  "sstupianhou": "空",
+  "ssbiaotiqian": "空",
+  "ssbiaotihou": "空",
+  "sslianjieqian": "空",
+  "sslianjiehou": "空",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "id=\"playlist",
+  "bfjiequshuzuhou": "</ul>",
+  "zhuangtaiqian": "class=\"otherbox\">",
+  "zhuangtaihou": "</p>",
+  "daoyanqian": "导演：</span>",
+  "daoyanhou": "</p>",
+  "zhuyanqian": "主演：</span>",
+  "zhuyanhou": "</p>",
+  "juqingqian": "a\" style=\"display: none;\">",
+  "juqinghou": "</span>",
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<a",
+  "bfyjiequshuzuhou": "/a>",
+  "bfbiaotiqian": ">",
+  "bfbiaotihou": "<",
+  "bflianjieqian": "href=\"",
+  "bflianjiehou": "\""
+},
+//555
+// 网站改版修正
+{
+  "author": "20220613",
+  "name": "555电影",
+  "url": "https://www.xawqxh.net",
+  "tihuan": "cnzz.com",
+  "User": "User-Agent:Dart/2.14 (dart:io)",
+  "shouye": "1",
+  "fenlei": "Netflix(片)$/vodshow/1---Netflix-----#Netflix(剧)$/vodshow/2---Netflix-----#Netflix(漫)$/vodshow/4---Netflix-----#热播电影$/vodshow/1--hits------#热播连续剧$/vodshow/13--------#日韩剧$/vodshow/44--------#欧美剧$/vodshow/45--------#港台剧$/vodshow/15--------#纪录片$/vodshow/1---纪录-----#儿童片$/vodshow/1---儿童-----#动画片$/vodshow/1---动画-----#亲子动漫$/vodshow/4---亲子-----#儿歌动漫$/vodshow/4---儿歌-----#国产动漫$/vodshow/4-大陆-------#日本动漫$/vodshow/4-日本-------#欧美动漫$/vodshow/4-欧美-------#其他动漫$/vodshow/4-其他-------#综艺记录$/vodshow/3--------#仙侠片$/vodshow/1---仙侠-----#剧情片$/vodshow/1---剧情-----#科幻片$/vodshow/1---科幻-----#动作片$/vodshow/1---动作-----#喜剧片$/vodshow/1---喜剧-----#爱情片$/vodshow/1---爱情-----#冒险片$/vodshow/1---冒险-----#歌舞片$/vodshow/1---歌舞-----#音乐片$/vodshow/1---音乐-----#奇幻片$/vodshow/1---奇幻-----#恐怖片$/vodshow/1---恐怖-----#惊悚片$/vodshow/1---惊悚-----#丧尸片$/vodshow/1---丧尸-----#战争片$/vodshow/1---战争-----#传记片$/vodshow/1---传记-----#犯罪片$/vodshow/1---犯罪-----#悬疑片$/vodshow/1---悬疑-----#西部片$/vodshow/1---西部-----#灾难片$/vodshow/1---灾难-----#古装片$/vodshow/1---古装-----#武侠片$/vodshow/1---武侠-----#家庭片$/vodshow/1---家庭-----#短片$/vodshow/1---短片-----#校园片$/vodshow/1---校园-----#文艺片$/vodshow/1---文艺-----#运动片$/vodshow/1---运动-----#青春片$/vodshow/1---青春-----#同性片$/vodshow/1---同性-----#励志片$/vodshow/1---励志-----#人性片$/vodshow/1---人性-----#美食片$/vodshow/1---美食-----#女性片$/vodshow/1---女性-----#治愈片$/vodshow/1---治愈-----#历史片$/vodshow/1---历史-----#真人秀$/vodshow/1---真人秀-----#脱口秀$/vodshow/1---脱口秀-----#",
+  "houzhui": "---.html",
+  "shifouercijiequ": "1",
+  "jiequqian": "class=\"module-items",
+  "jiequhou": "class=\"fixedGroup",
+  "jiequshuzuqian": "<a",
+  "jiequshuzuhou": "alt=\"",
+  "tupianqian": "data-original=\"",
+  "tupianhou": "\"",
+  "biaotiqian": "title=\"",
+  "biaotihou": "\"",
+  "lianjieqian": "href=\"",
+  "lianjiehou": "\"",
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "note\">",
+  "fubiaotihou": "</div>",
+  "sousuoqian": "/index.php/ajax/suggest?mid=1&wd=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/voddetail/",
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "空",
+  "ssjiequshuzuhou": "空",
+  "sstupianqian": "空",
+  "sstupianhou": "空",
+  "ssbiaotiqian": "空",
+  "ssbiaotihou": "空",
+  "sslianjieqian": "空",
+  "sslianjiehou": "空",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "class=\"module-play-list\"",
+  "bfjiequshuzuhou": "</div>",
+  "zhuangtaiqian": "更新：</span>",
+  "zhuangtaihou": "</div>",
+  "daoyanqian": "导演：</span>",
+  "daoyanhou": "</div>",
+  "zhuyanqian": "主演：</span>",
+  "zhuyanhou": "</div>",
+  "juqingqian": "<p>",
+  "juqinghou": "</p>",
+  "bfyshifouercijiequ": "0",
+  "bfyjiequqian": "空",
+  "bfyjiequhou": "空",
+  "bfyjiequshuzuqian": "<a",
+  "bfyjiequshuzuhou": "/a>",
+  "bfbiaotiqian": "span>",
+  "bfbiaotihou": "</span",
+  "bflianjieqian": "href=\"",
+  "bflianjiehou": "\""
+},
+//特狗
+{
+  "author":"20220605",
+  "name": "特狗影视",
+  "url": "https://www.tegouys.com", //填网站链接
+  "tihuan": "cnzz.com", //这个不用动，是个别网站嗅探时过滤地址用的
+  "User": "空", //这个不用动，是个别网站播放需要请求头时才用到
+  "shouye": "1",
+  "fenlei": "儿童电影$/vodshow/class/儿童/id/1/page/#亲子综艺$/vodshow/class/亲子/id/3/page/#合家欢动漫$/vodshow/class/合家欢/id/4/page/#曲艺综艺$/vodshow/class/曲艺/id/3/page/#电影$/vodshow/id/1/page/#国产剧$/vodshow/area/内地/id/2/page/#香港剧$/vodshow/area/香港/id/2/page/#韩国剧$/vodshow/area/韩国/id/2/page/#美国剧$/vodshow/area/美国/id/2/page/#日本剧$/vodshow/area/日本/id/2/page/#泰国剧$/vodshow/area/泰国/id/2/page/#台湾剧$/vodshow/area/台湾/id/2/page/#英国剧$/vodshow/area/英国/id/2/page/#其它剧$/vodshow/area/其它/id/2/page/#综艺$/vodshow/id/3/page/#国产动漫$/vodshow/area/内地/id/4/page/#日本动漫$/vodshow/area/日本/id/4/page/#欧美动漫$/vodshow/area/欧美/id/4/page/#其它动漫$/vodshow/area/其它/id/4/page/", //网站列表的分类
+  "houzhui": ".html", //网站翻页链接的后缀
+  "shifouercijiequ": "0", //截取的列表数组是否需要二次截取，0不需要，1需要
+  "jiequqian": "空", //不需要二次截取就填空
+  "jiequhou": "空", //不需要二次截取就填空
+  "jiequshuzuqian": "class=\"myui-vodlist__box\"", //截取的列表数组的前关键词,截取的关键词有 " 的用 \ 进行转义
+  "jiequshuzuhou": "</a>", //截取的列表数组的后关键词,截取的关键词有 " 的用 \ 进行转义
+  "tupianqian": "data-original=\"", //列表中资源的图片前关键词,截取的关键词有 " 的用 \ 进行转义
+  "tupianhou": "\"", //列表中资源的图片后关键词,截取的关键词有 " 的用 \ 进行转义
+  "biaotiqian": "title=\"", //列表中资源的标题前关键词,截取的关键词有 " 的用 \ 进行转义
+  "biaotihou": "\"", //列表中资源的标题后关键词,截取的关键词有 " 的用 \ 进行转义
+  "lianjieqian": "href=\"", //列表中资源的详情页跳转链接前关键词,截取的关键词有 " 的用 \ 进行转义
+  "lianjiehou": "\"", //列表中资源的详情页跳转链接后关键词,截取的关键词有 " 的用 \ 进行转义
+  //新版Biubiu参数：副标题 (不需要的话，就不填写或者删除副标题2个字段也可以。)
+  "fubiaotiqian": "text-right\">",
+  "fubiaotihou": "</span",
+  //搜索部分基本不用动，现在网站基本都是苹果CMS，所有搜索是固定的。
+  "sousuoqian": "/ajax/suggest?mid=1&wd=",
+  "sousuohou": "&limit=500",
+  "sousuohouzhui": "/voddetail/", //搜索页影片跳转详情页的中间标识链接部分
+  "ssmoshi": "0",
+  "sousuoshifouercijiequ": "0",
+  "jspic": "pic",
+  "jsname": "name",
+  "jsid": "id",
+  "ssjiequqian": "空",
+  "ssjiequhou": "空",
+  "ssjiequshuzuqian": "空",
+  "ssjiequshuzuhou": "空",
+  "sstupianqian": "空",
+  "sstupianhou": "空",
+  "ssbiaotiqian": "空",
+  "ssbiaotihou": "空",
+  "sslianjieqian": "空",
+  "sslianjiehou": "空",
+  "bfshifouercijiequ": "0",
+  "bfjiequqian": "空",
+  "bfjiequhou": "空",
+  "bfjiequshuzuqian": "id=\"playlist", //播放截取的列表数组的前关键词
+  "bfjiequshuzuhou": "</ul>", //播放截取的列表数组的后关键词
+  "zhuangtaiqian": "class=\"text-red\">", //状态前关键词
+  "zhuangtaihou": "/", //状态后关键词
+  "daoyanqian": "导演：</span>", //导演前关键词
+  "daoyanhou": "</p>", //导演态后关键词
+  "zhuyanqian": "主演：</span>", //主演前关键词
+  "zhuyanhou": "</p>", //主演后关键词
+  "juqingqian": "简介：</span>", //剧情前关键词
+  "juqinghou": "<a", //剧情后关键词
+  "bfyshifouercijiequ": "0", //截取的播放列表数组是否需要二次截取，0不需要，1需要
+  "bfyjiequqian": "空", //不需要二次截取就填空
+  "bfyjiequhou": "空", //不需要二次截取就填空
+  "bfyjiequshuzuqian": "<a", //播放剧集数组前关键词
+  "bfyjiequshuzuhou": "/a>", //播放剧集数组后关键词
+  "bfbiaotiqian": ">", //播放剧集标题前关键词
+  "bfbiaotihou": "<", //状播放剧集标题后关键词
+  "bflianjieqian": "href=\"", //播放剧集链接前关键词
+  "bflianjiehou": "\""//播放剧集链接后关键词
+} 
+]
+}
